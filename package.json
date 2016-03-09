@@ -2,7 +2,7 @@
   "name": "react-fundamentals-curriculum",
   "version": "1.0.0",
   "description": "Curriculum for React.js Program's React Fundamentals course.",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,21 @@
   "bugs": {
     "url": "https://github.com/ReactjsProgram/react-fundamentals-curriculum/issues"
   },
-  "homepage": "https://github.com/ReactjsProgram/react-fundamentals-curriculum#readme"
+  "homepage": "https://github.com/ReactjsProgram/react-fundamentals-curriculum#readme",
+  "devDependencies": {
+    "axios": "^0.9.1",
+    "babel-core": "^6.6.5",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "html-webpack-plugin": "^2.9.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts":  {
+    "production": "webpack -p",
+    "start": "webpack-dev-server"
+  }
 }
